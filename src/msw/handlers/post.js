@@ -1,6 +1,6 @@
 import { http, HttpResponse } from 'msw'
 import { Map } from 'immutable'
-import { posts as initialPosts } from '../data/posts.js';
+import { postsData } from '../data/posts-data'
 
 /**
  * Mock Service Worker (MSW) handlers for Post-related API endpoints.
@@ -19,7 +19,7 @@ import { posts as initialPosts } from '../data/posts.js';
  */
 
 
-const allPosts = new Map(initialPosts.map(post => [post.id, post]));
+let allPosts = Map(postsData.map(post => [post.id, post]));
 
 export const handlers = [
     // INDEX
@@ -33,7 +33,7 @@ export const handlers = [
         const newPost = await request.json();
         const postId = Date.now().toString();
         newPost.id = postId;
-        allPosts = allPosts.set(postId, newPost);  // Reassign updated Map
+        allPosts = allPosts.set(postId, newPost);
         console.log('POST /posts', newPost, Array.from(allPosts.entries()));
         return HttpResponse.json(newPost, { status: 201 });
     }),
@@ -57,7 +57,7 @@ export const handlers = [
         }
         const updatedPost = await request.json();
         updatedPost.id = params.id;
-        allPosts = allPosts.set(params.id, updatedPost);  // Reassign updated Map
+        allPosts = allPosts.set(params.id, updatedPost);
         console.log('Updated post', updatedPost);
         return HttpResponse.json(updatedPost);
     }),
@@ -69,7 +69,7 @@ export const handlers = [
         if (!post) {
             return HttpResponse.json({ error: 'Post not found' }, { status: 404 });
         }
-        allPosts = allPosts.delete(params.id);  // Reassign updated Map
+        allPosts = allPosts.delete(params.id);
         return HttpResponse.json(post);
     }),
 ];
