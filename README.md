@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# MSW Example Implementation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![MSW Logo](https://mswjs.io/_astro/msw.d6PiRO0h.svg)
 
-## Available Scripts
+This project demonstrates an example implementation of Mock Service Worker (MSW) for JavaScript Proof of Concept (POC) demos. It showcases how to mock CRUD (Create, Read, Update, Delete) operations for a 'posts' resource.
 
-In the project directory, you can run:
+## What This Demo Covers
 
-### `npm start`
+- **Create**: Simulating the addition of new posts
+- **Read**: Fetching individual posts and lists of posts
+- **Update**: Modifying existing post data
+- **Delete**: Removing posts from the system
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These mocked operations allow for rapid prototyping and testing of front-end functionality without the need for a real backend server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Styling
 
-### `npm test`
+This project utilizes [Material-UI (MUI)](https://mui.com/) for styling and UI components. MUI provides a comprehensive suite of UI tools and pre-built components that help create a polished and responsive user interface with minimal effort.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For a detailed guide on how to use MSW in your projects, implement these CRUD operations, and integrate MUI for styling, check out my blog post:
+[How to use Mocking Service Worker (MSW) for your JS POC demos](INSERT_LINK_HERE)
 
-### `npm run build`
+## About the Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I'm an indie hacker passionate about building innovative products. You can find more about my projects and thoughts on software development across these platforms:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Twitter/X: [@zivou4](https://x.com/zivou4)
+- Blog: [SDETs Can Also Code](https://skrdev.hashnode.dev/)
+- Personal Website: [Dmitrii Skrylev](https://www.skrdev.com/)
+- Indie Project: [MudQuest - Real-Time Offroad Party Finder](https://www.mud-quest.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Feel free to connect with me and check out my other projects!
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Check out my MudQuest App
+[MudQuest - Real-Time Offroad Party Finder](https://www.mud-quest.com/)
+![MudQuest Logo](https://framerusercontent.com/images/wj24E3UsusFvTRzBV4NhcDFPw.png?scale-down-to=2048)
