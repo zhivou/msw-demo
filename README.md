@@ -4,6 +4,9 @@
 
 This project demonstrates an example implementation of Mock Service Worker (MSW) for JavaScript Proof of Concept (POC) demos. It showcases how to mock CRUD (Create, Read, Update, Delete) operations for a 'posts' resource.
 
+## Follow the post below
+[Blog](https://skrdev.hashnode.dev/how-to-use-mocking-service-worker-msw-for-your-js-poc-demos)
+
 ## Live Demo
 Wait for Heroku to load the app. May take up to 1 minute.
 [Live Demo](https://msw-for-demos-1bf324cd6a86.herokuapp.com/)
